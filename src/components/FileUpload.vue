@@ -37,12 +37,8 @@ const uploadFile = async () => {
     });
 
     // Blob 생성
-    console.log(response.headers["content-type"])
     const mimeType = response.headers["content-type"] || "application/octet-stream";
     fileBlob.value = new Blob([response.data], { type: mimeType });
-
-    console.log(mimeType);
-
 
     // 이미지 파일이면 미리보기 URL 생성
     if (mimeType.startsWith("image/")) {

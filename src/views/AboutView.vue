@@ -1,11 +1,15 @@
 <script setup>
 import FileUpload from '../components/FileUpload.vue'
+import MultipleFileUpload from '../components/MultipleFileUpload.vue'
 </script>
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Single Uploader</h1>
     <FileUpload/>
+
+    <h1>Multiple Uploader</h1>
+    <MultipleFileUpload/>
   </div>
 </template>
 

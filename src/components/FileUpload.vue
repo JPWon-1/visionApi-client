@@ -70,7 +70,7 @@ const downloadFile = () => {
 
 <template>
   <div class="upload-container">
-    <h2>GPS 정보 추가 파일 업로드</h2>
+    <h2>싱글 파일 업로드</h2>
     <input type="file" @change="handleFileChange" accept="image/*" />
     <button @click="uploadFile" :disabled="processing">
       {{ processing ? "처리 중..." : "업로드" }}
